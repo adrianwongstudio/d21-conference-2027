@@ -54,7 +54,7 @@ header.top { background: var(--loyal-blue); color: #fff; }
 .menu a { color: #fff; text-decoration: none; font-size: 1.05rem; padding-bottom: 4px; border-bottom: 2px solid transparent; }
 .menu a:hover { border-color: var(--happy-yellow); }
 .btn { white-space: nowrap; }
-@media (max-width: 600px) { .menu { display: none; } .brand img { width: 44px; } .brand b { font-size: 1.15rem; } .brand span { font-size: .75rem; } .top-row .btn { padding: 8px 12px; font-size: .9rem; } }
+@media (max-width: 600px) { .menu { gap: 4px 18px; } .menu a { font-size: .95rem; } .brand img { width: 44px; } .brand b { font-size: 1.15rem; } .brand span { font-size: .75rem; } .top-row .btn { padding: 8px 12px; font-size: .9rem; } }
 
 /* Banner */
 .banner {
@@ -66,17 +66,6 @@ header.top { background: var(--loyal-blue); color: #fff; }
 .banner p { font-size: clamp(1.05rem, 2.4vw, 1.4rem); margin: 0 0 .4em; text-shadow: 0 2px 6px rgba(0,0,0,.5); }
 .banner .when { font-weight: 700; }
 .banner .btn { margin-top: 16px; }
-
-/* Maroon quick-link tiles */
-.tiles { display: flex; background: var(--true-maroon); }
-.tiles a { flex: 1; color: #fff; text-decoration: none; text-align: center; padding: 30px 8px; font-size: 1.1rem; }
-.tiles a i { display: block; font-size: 2rem; margin-bottom: 6px; }
-.tiles a:nth-child(2) { background: rgba(255,255,255,.1); }
-.tiles a:nth-child(3) { background: rgba(255,255,255,.15); }
-.tiles a:nth-child(4) { background: rgba(255,255,255,.2); }
-.tiles a:nth-child(5) { background: rgba(255,255,255,.25); }
-.tiles a:hover { background: rgba(0,0,0,.15); }
-@media (max-width: 600px) { .tiles a { font-size: .8rem; padding: 18px 4px; } .tiles a i { font-size: 1.4rem; } }
 
 /* About */
 .about-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 48px; align-items: center; }
@@ -196,14 +185,6 @@ footer a:hover { text-decoration: underline; }
     <p class="when">April 16&ndash;18, 2027 &middot; Richmond, BC</p>
     <a class="btn btn-yellow" href="https://www.zeffy.com/en-CA/ticketing/d21-annual-conference--2027" target="_blank" rel="noopener">Get Your Tickets</a>
   </div>
-</div>
-
-<div class="tiles">
-  <a href="#about"><i class="bi bi-mic"></i>Program</a>
-  <a href="#tickets"><i class="bi bi-ticket-perforated"></i>Tickets</a>
-  <a href="#venue"><i class="bi bi-geo-alt-fill"></i>Venue</a>
-  <a href="#sponsor"><i class="bi bi-award"></i>Sponsor</a>
-  <a href="#contact"><i class="bi bi-envelope"></i>Contact</a>
 </div>
 
 <section id="about">
